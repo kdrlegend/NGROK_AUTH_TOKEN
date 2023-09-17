@@ -11,8 +11,8 @@ jobs:
     steps:
     - name: Downloading Ngrok.
       run: |
-        Invoke-WebRequest https://github.com/kdrlegend/NGROK_AUTH_TOKEN/raw/850bfadf3fe5bf1f1f6157ac37da951e04a6f474/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://github.com/kdrlegend/NGROK_AUTH_TOKEN/raw/850bfadf3fe5bf1f1f6157ac37da951e04a6f474/ngrok-stable-windows-amd64.zipmain/start.bat -OutFile start.bat
+        Invoke-WebRequest https://github.com/kdrlegend/NGROK_AUTH_TOKEN/raw/main/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
+        Invoke-WebRequest https://github.com/kdrlegend/NGROK_AUTH_TOKEN/raw/main/ngrok-stable-windows-amd64.zip/main/start.bat -OutFile start.bat
     - name: Extracting Ngrok Files.
       run: Expand-Archive ngrok.zip
     - name: Connecting to your Ngrok account.
